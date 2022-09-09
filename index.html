@@ -1,91 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Min portfolio</title>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1"> <!-- for internet explorer -->
-        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile device optimized -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/lity.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Muli:300,400" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
-    <body>
-        <section id="hero">
-            <div class="container">
-                <header class="main-header">
-                    <div class="main-header__brand">
-                        <a href="#" class="main-header__brand-logo">Min <span>Portfolio</span></a>
-                    </div>  
-                    <!-- Mobile hidden nav -->
-                    <nav class="mobile-nav overlay">
-                        <div class="nav-burger toggle" id="toggle">
-                            <span class="bar top"></span>
-                            <span class="bar middle"></span>
-                            <span class="bar bottom"></span>
-                        </div>
-                </header>
-                <div class="hero-content">
-                    <h1 class="hero-content__heading">Hej. Mitt namn är Vilhelm Gustavsson</h1>
-                    <h1>Web Designer / Developer</h1>
-                    <a href="#portfolio" class="hero-content__cta">Visa Mina Projekt</a>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="container">
-                <div class="about--content">
-                    <h2 class="about-content__heading">Lite om mig</h2>
-                    <p>Mitt namn är Vilhelm Gustavsson och detta är min <span>portfolio</span>.</p>
-                    <p>Här kommer jag att lägga upp saker jag har gjort under <span>Webutveclingen</span></p>
-                </div>
-            </div>
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <section id="education">
-            <div class="container">
-                <div class="about--content">
-                    <h2 class="about-content__heading">Education</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, laudantium eos quisquam, quis consectetur cum maxime iure sed, amet magni nihil repudiandae omnis provident error delectus quibusdam voluptatibus animi excepturi.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
 
-        <section id="portfolio">
-            <div class="container">
-                <h2 class="portfolio__heading">Mina <span>Projekts</span></h2>
-                <div class="flex-container-portfolio">
-                    <div class="flex-item-project">Min Test sida
-                        <a href="min_test_sida/index.html" target="_blank">
-                            <img src="images/project1.jpeg" alt="Projekt 1">
-                        </a>
-                    </div>
-                    <div class="flex-item-project">Slutprojekt Web2
-                        <a href="slutprojekt/home.html" target="_blank">
-                            <img src="images/projekt2.PNG" alt="Projekt 2">
-                        </a>
-                    </div>
-                    <div class="flex-item-project">Projekt 3
-                        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
-                            <img src="images/project1.jpeg" alt="Projekt 3">
-                        </a>
-                    </div>
-                    <div class="flex-item-project">Projekt 4
-                        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
-                            <img src="images/project1.jpeg" alt="Projekt 4">
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
+    <!-- devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="top">
+        <div class="introCenter ">
+            <h1>Hello!</h1>
+            <h2>I'm Vilhelm Gustavsson</h2>
+            <p>And this is some of my work!</p>
+            <br>
+            <a href="#recentProject" class="recentProjectButton">Find out more!</a>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+
+    <div class="education">
+        <h1>My education!</h1>
+        <div class="educationContent">
+            <p>High School Software Engineer <br> NTI Uppsala | 2022 - ongoing </p>
             
-        <section id="footer__copyright">
-            <div class="container">
-                <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Vilhelm All Rights Reserved</p>
+            <p>High School Infromation Technology Program <br> NTI Uppsala | 2019 - 2022 </p>
+        </div>
+    </div>
+
+    <div class="langExperience">
+        <h1>Expertise</h1>
+        <div class="langIcons">
+            <div class="langInfo">
+                <i class="devicon-html5-plain-wordmark"></i>
+                <h2>HTML 5</h2>
             </div>
-        </section>  
-    </body>
-</html> 
+            <div class="langInfo">
+                <i class="devicon-css3-plain-wordmark"></i>  
+                <h2>CSS 3</h2>
+            </div>
+            <div class="langInfo">
+                <i class="devicon-javascript-plain"></i>
+                <h2>JavaScript</h2>
+            </div> 
+            <div class="langInfo">
+                <i class="devicon-python-plain"></i>
+                <h2>Python</h2>
+            </div>    
+        </div>
+        <div class="langInfo">
+            <i><img src="/assets/img/cert.png" alt="test"></i>
+            <h2>Microsoft Technology Associate</h2>
+            <p>Introduction to Programming Using Python</p>
+            <a href="https://www.credly.com/earner/earned/badge/b4bb2aa5-18fe-4597-8c2f-5468da354551" target="_blank">View More</a>
+        </div>
+    </div>
+
+    
+    <div id="recentProject">
+        <h1>Recent projects</h1>
+        <div class="recentProjectContent">
+
+        </div>
+    </div>
+
+    <div class="aboutMe">
+        <h1>About me</h1>
+        <div class="aboutMeContent">
+            <p>
+                My name is Vilhelm Gustavsson and I am a software development student from Sweden.
+                During my passed three years in school I have primarly worked on project using programming languages such as python, html, css and javascript. <br> 
+                I am currently studying a fourth year of high school at NTI where I get to work on projects in groups using Scrum. 
+            </p>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer">
+        <h1>Contact me!</h1>
+        <div class="footerCenter">
+            <a href="tel:+46709409954" class="callButton">Call Me!</a>  
+            <a href="mailto:vilhelm.gustavsson@elev.ga.ntig.se" class="mailButton">Email Me!</a>      
+        </div>
+        <a class="footerLink" href="tel:+46709409954">(+46)709409954</a>
+        <a class="footerLink" href="mailto:vilhelm.gustavsson@elev.ga.ntig.se">vilhelm.gustavsson@elev.ga.ntig.se</a>
+    </div>
+    <!-- end footer section -->
+
+    <!-- find me section -->
+    <div class="findMe">
+        <h1>Find me!</h1>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/vilhelm-gustavsson-a90b77236/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Gustavsson123"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+    <!-- end find me section -->
+
+    <!-- Scripts -->
+
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/ff69b9c866.js" crossorigin="anonymous"></script>
+
+    <!-- scroll script -->
+    <script src="/assets/js/scroll.js"></script>
+
+</body>
+</html>
